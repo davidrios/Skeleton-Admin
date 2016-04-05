@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/davidrios/Skeleton-Admin#readme",
   "devDependencies": {
+    "font-awesome": "^4.5.0",
     "stylus": "^0.54.2"
   }
 }

@@ -1,31 +1,53 @@
 body
   > nav:first-child
-    background-color #222
+    background-color #282828
     color #FFF
     height 100%
     width 300px
+    overflow auto
     
     > h2
+      background-color #222
       padding 10px
       margin 0
     
     > ul
       margin 0
       list-style none
-      background-color #282828
-      height 100%
       
       > li
         margin 0
         color #CCC
         font-weight 600
         
-        :hover
+        &:hover,
+        &.active
           color #FFF
           background-color #222
+          position relative
+          
+          &:before
+            content ''
+            display block
+            width 2px
+            height 100%
+            position absolute
+            top 0
+            left 0
+            background-color white
             
         > a
           display block
-          padding 10px
+          padding 10px 10px 10px 2.2em
           text-decoration none
           color inherit
+          position relative
+          
+          &.icon:before
+            font-family FontAwesome
+            font-weight normal
+            display block
+            position absolute
+            left 0.8em
+            line-height 1em
+            top 0.9em
