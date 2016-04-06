@@ -1,53 +1,64 @@
-body
-  > nav:first-child
-    background-color #282828
-    color #FFF
-    height 100%
-    width 300px
-    overflow auto
+body > nav:first-child
+  background-color #282828
+  color #FFF
+  height 100%
+  overflow auto
+  position fixed
+  width 250px
+  left -250px
+  transition left 0.3s ease-out
+  
+  @media desktop
+    left 0
+  
+  &.show
+    left 0
+  
+  > h2
+    background-color #222
+    padding 10px
+    margin 0
+    font-size 1.4em
+  
+  > ul
+    margin 0
+    list-style none
     
-    > h2
-      background-color #222
-      padding 10px
+    > li
       margin 0
-    
-    > ul
-      margin 0
-      list-style none
+      color #CCC
+      font-weight 600
       
-      > li
-        margin 0
-        color #CCC
-        font-weight 600
+      &:hover,
+      &.active
+        color #FFF
+        background-color #222
+        position relative
         
-        &:hover,
-        &.active
-          color #FFF
-          background-color #222
-          position relative
-          
-          &:before
-            content ''
-            display block
-            width 2px
-            height 100%
-            position absolute
-            top 0
-            left 0
-            background-color white
-            
-        > a
+        &:before
+          content ''
           display block
-          padding 10px 10px 10px 2.2em
-          text-decoration none
-          color inherit
-          position relative
+          width 2px
+          height 100%
+          position absolute
+          top 0
+          left 0
+          background-color #FFF
           
-          &.icon:before
-            font-family FontAwesome
-            font-weight normal
-            display block
-            position absolute
-            left 0.8em
-            line-height 1em
-            top 0.9em
+      > a
+        display block
+        padding 10px 10px 10px 2.2em
+        color inherit
+        position relative
+        
+        &.icon:before
+          @extend $fa-font-settings
+          position absolute
+          left 0.8em
+          top 0.9em
+
+  > a.menu-close
+    @extend $a-header-icon
+    float right
+    @media desktop
+      display none
