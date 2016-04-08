@@ -8,7 +8,7 @@ body > nav:first-child
   left: -250px
   transition: left 0.3s ease-out
   
-  #{$desktop}
+  @media #{$desktop}
     left: 0
   
   &.show
@@ -52,7 +52,7 @@ body > nav:first-child
         position: relative
         
         &.icon:before
-          @extend: %fa-font-settings
+          @extend %fa-font-settings
           position: absolute
           left: 0.8em
           top: 0.9em
@@ -60,5 +60,5 @@ body > nav:first-child
   > a.menu-close
     @extend %a-header-icon
     float: right
-    #{$desktop}
+    @media #{$desktop}
       display: none

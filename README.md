@@ -5,17 +5,14 @@ A shot at a minimalist Admin template, requiring as little manual styling as pos
 
 ## Dev
 
-Install:
+Needs SassC [installed](https://github.com/sass/libsass/blob/master/docs/build.md).
 
-    npm install
+[Get Font-Awesome](https://fortawesome.github.io/Font-Awesome/assets/font-awesome-4.5.0.zip) and
+extract it to `dist`.
 
-Export node modules bin:
+Compile:
 
-    export PATH=$(pwd)/node_modules/.bin:$PATH
-
-Compile stylus:
-
-    stylus -o dist/admin.css -m src/stylus/index.styl
+    sassc -m src/sass/index.sass dist/admin.css
 
 Serve test files:
 
