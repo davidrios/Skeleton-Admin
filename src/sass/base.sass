@@ -1,5 +1,11 @@
 html, body
   height: 100%
+
+body
+  transition: padding-left 0.3s ease-out
+
+  @media #{$desktop}
+    padding-left: 250px
   
 a
   text-decoration: none

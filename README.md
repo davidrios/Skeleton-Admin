@@ -5,7 +5,7 @@ A shot at a minimalist Admin template, requiring as little manual styling as pos
 
 ## Dev
 
-Needs SassC [installed](https://github.com/sass/libsass/blob/master/docs/build.md).
+Needs a Sass compiler installed, I'm using [SassC](https://github.com/sass/libsass/blob/master/docs/build.md).
 
 [Get Font-Awesome](https://fortawesome.github.io/Font-Awesome/assets/font-awesome-4.5.0.zip) and
 extract it to `dist`.

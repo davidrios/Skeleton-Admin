@@ -1,13 +1,11 @@
 body > header
-  background-color: #222
-  color: #FFF
+  background-color: $menu-dark-background-color
+  color: $menu-text-color
   height: 46px
   
   > a
-    &.menu-toggle,
-    &.user-settings
-      @extend %a-header-icon
-      
+    @extend %a-header-icon
+
     &.menu-toggle
       float: left
       @media #{$desktop}

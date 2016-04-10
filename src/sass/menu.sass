@@ -1,6 +1,6 @@
 body > nav:first-child
-  background-color: #282828
-  color: #FFF
+  background-color: $menu-background-color
+  color: $menu-text-color
   height: 100%
   overflow: auto
   position: fixed
@@ -15,7 +15,7 @@ body > nav:first-child
     left: 0
   
   > h2
-    background-color: #222
+    background-color: $menu-dark-background-color
     padding: 10px
     margin: 0
     font-size: 1.4em
@@ -26,13 +26,13 @@ body > nav:first-child
     
     > li
       margin: 0
-      color: #CCC
+      color: $menu-inactive-text-color
       font-weight: 600
       
       &:hover,
       &.active
-        color: #FFF
-        background-color: #222
+        color: $menu-text-color
+        background-color: $menu-dark-background-color
         position: relative
         
         &:before
@@ -43,7 +43,7 @@ body > nav:first-child
           position: absolute
           top: 0
           left: 0
-          background-color: #FFF
+          background-color: $menu-text-color
           
       > a
         display: block
