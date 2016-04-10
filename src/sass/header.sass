@@ -4,12 +4,4 @@ body > header
   height: 46px
   
   > a
-    @extend %a-header-icon
-
-    &.menu-toggle
-      float: left
-      @media #{$desktop}
-        display: none
-      
-    &.user-settings
-      float: right
+    @extend %header-button

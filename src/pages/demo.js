@@ -6,10 +6,10 @@
   }
 
   document
-    .querySelector('body > header > a.menu-toggle')
+    .getElementById('menu-toggle')
     .addEventListener('click', menuToggleClick);
 
   document
-    .querySelector('body > nav > a.menu-close')
+    .getElementById('menu-close')
     .addEventListener('click', menuToggleClick);
 }();

@@ -28,6 +28,12 @@ $desktop: '(min-width: 1000px)'
 $desktop-hd: '(min-width: 1200px)'
 
 
+// useful classes
+.desktop-hide
+  @media #{$desktop}
+    display: none !important
+
+
 // shared pseudo-classes
 %fa-font-settings
   display: inline-block
@@ -45,7 +51,7 @@ $desktop-hd: '(min-width: 1200px)'
   font-size: inherit
   text-rendering: auto
 
-%a-header-icon
+%header-button
   display: block
   color: $menu-inactive-text-color
   font-size: 1em
