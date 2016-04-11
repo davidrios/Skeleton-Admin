@@ -1,2 +1,47 @@
 body > section
   @extend .container
+
+section.data-table
+  > table
+    width: 100%
+
+  > nav
+    position: relative
+
+    > p
+      margin-bottom: 1rem
+
+      @media #{$desktop-hd}
+        float: right
+        margin-top: 0.7rem
+
+    > div > div
+      &.page_num
+        text-align: center
+
+      &.right
+        position: absolute
+        top: 3.4rem
+        right: 0
+
+      > button
+        padding: 0 1.5rem
+
+      > input
+        width: 7rem
+
+      @media #{$phablet}
+        display: inline-block
+
+        &.page_num
+          margin: 0px 0.5rem
+          padding: 0px 0.5rem
+          border-right: 1px solid $button-border-color
+          border-left: 1px solid $button-border-color
+
+        &.right
+          position: relative
+          top: 0
+
+        > input
+          margin: 0
