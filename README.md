@@ -18,4 +18,4 @@ Serve test files:
 
     python -m SimpleHTTPServer
 
-Access <http://localhost:8000/src/pages/table.html>.
+Access <http://localhost:8000/src/pages/>.
