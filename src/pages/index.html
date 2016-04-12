@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Table Page</title>
+    <title>Skeleton Admin Demo</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/dist/font-awesome-4.5.0/css/font-awesome.css">
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/dist/normalize.css">
+    <link rel="stylesheet" href="/dist/font-awesome-4.5.0/css/font-awesome.css">
     <link rel="stylesheet" href="/dist/admin.css">
+    <link rel="stylesheet" href="/src/pages/demo.css">
   </head>
 
   <body>
@@ -17,11 +18,11 @@
       <a id="menu-close" href="#" class="fa fa-angle-left desktop-hide u-pull-right"></a>
       <h2>Menu</h2>
       <ul>
-        <li><a href="form.html" class="icon fa-home">Form</a></li>
-        <li class="active"><a href="table.html" class="icon fa-user">Table</a></li>
-        <li><a href="#">Test</a></li>
-        <li><a href="#">Test</a></li>
-        <li><a href="#" class="icon fa-cog">Test</a></li>
+        <li><a href="#data-table" class="icon fa-user">Data Table</a></li>
+        <li><a href="#forms" class="icon fa-home">Form</a></li>
+        <li><a href="#">Test 1</a></li>
+        <li><a href="#">Test 2</a></li>
+        <li><a href="#" class="icon fa-cog">Test 3</a></li>
       </ul>
     </nav>
 
@@ -30,7 +31,7 @@
       <a id="menu-toggle" href="#" class="fa fa-bars desktop-hide"></a>
     </header>
 
-    <section>
+    <section data-link="#data-table">
       <h1>Table</h1>
       <section class="data-table">
         <table>
@@ -98,17 +99,24 @@
           <p>Showing 333 - 363 of 9999 records.</p>
           <div>
             <div class="left">
-              <button class="fa fa-double-chevron-left"></button>
-              <button class="fa fa-chevron-left"></button>
+              <a class="button fa fa-double-chevron-left"></a>
+              <a class="button fa fa-chevron-left"></a>
             </div>
             <div class="page_num">Page <input type="text" value="333" /> of 999</div>
             <div class="right">
-              <button class="fa fa-chevron-right"></button>
-              <button class="fa fa-double-chevron-right"></button>
+              <a class="button fa fa-chevron-right"></a>
+              <a class="button fa fa-double-chevron-right"></a>
             </div>
           </div>
         </nav>
       </section>
+    </section>
+
+    <section data-link="#forms">
+      <h1>Forms</h1>
+      <form>
+        <label>Test <input type="text" value="value" /></label>
+      </form>
     </section>
 
     <script src="/src/pages/demo.js"></script>

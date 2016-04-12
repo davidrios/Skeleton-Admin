@@ -1,6 +1,3 @@
-body > section
-  @extend .container
-
 section.data-table
   > table
     width: 100%
@@ -24,8 +21,11 @@ section.data-table
         top: 3.4rem
         right: 0
 
-      > button
+      > a.button
         padding: 0 1.5rem
+
+        &:before
+          font-size: 1.3rem
 
       > input
         width: 7rem
