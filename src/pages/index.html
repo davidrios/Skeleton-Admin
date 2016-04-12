@@ -114,8 +114,21 @@
 
     <section data-link="#forms">
       <h1>Forms</h1>
-      <form>
-        <label>Test <input type="text" value="value" /></label>
+      <h2>Single</h2>
+      <form class="single">
+        <div>
+          <label for="input1">Test</label>
+          <input id="input1" type="text" value="value" />
+          <p>A help text.</p>
+          <p class="error">An error message</p>
+        </div>
+
+        <div class="error">
+          <label for="input2">Test with error</label>
+          <input id="input2" type="text" value="error value" />
+          <p>A help text.</p>
+          <p class="error">An error message</p>
+        </div>
       </form>
     </section>
 
